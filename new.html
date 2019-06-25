@@ -1,0 +1,508 @@
+C:\Users\Public\Downloads\venv\Scripts\python.exe "C:/Users/I333515/.PyCharmCE2018.2/config/scratches/Web scraping/eg_scraping_may2019.py"
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta content="https://www.rithmschool.com/assets/logos/rithm_logo-52c2ff4eb53876f905ff2d8b1d46b5ec737caa4d9f9acf4790dcd856f3ccc638.svg" property="og:image"/>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Spend 16 weeks learning JavaScript, Python, and React with up to 18 other students. Learn quickly with experienced instructors. No tuition until you're hired" name="description"/>
+<meta content="Rithm School" name="author"/>
+<title>The Rithm Blog</title>
+<link href="/assets/application-84f90791da100b26ea40e9ac25a82c79691a15378b836bb8ed22a886c6a23e0a.css" media="all" rel="stylesheet"/>
+<!-- Add a stylesheet tag for the name of the action -->
+<link href="/assets/main-4852d600e9cfdc7fe3c131b4686c100fd6a354b5fd46780e9abed8eec445c5e7.css" media="screen" rel="stylesheet"/>
+<link href="/assets/blog-c9d92c68c043b87ccaba79577a3af5df6eec4a420af989a8b74d697890503a7b.css" media="screen" rel="stylesheet"/>
+<link href="/assets/favicon-eb41ae8905bdd2b439d03b1628aaa345c177848bb8e6c36ea8c5a56cf03ef757.ico" rel="shortcut icon" type="image/x-icon"/>
+<meta content="authenticity_token" name="csrf-param">
+<meta content="H2NFHQ8Iz87mZr3xjmpO9p5sDqX9GVrAYVRFVh88K6QMg/mh/cgI6abiVDXfkxosoUvWiq1TRhTRo69RDJTxEQ==" name="csrf-token">
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<!-- DO NOT MODIFY -->
+<!-- Quora Pixel Code (JS Helper) -->
+<!-- End of Quora Pixel Code -->
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+ fbq('init', '214663358944902');
+fbq('track', 'PageView');
+</script>
+<noscript>
+<img height="1" src="https://www.facebook.com/tr?id=214663358944902&amp;ev=PageView
+&amp;noscript=1" width="1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+<!-- Fullstory script -->
+<style>.async-hide { opacity: 0 !important} </style>
+<script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+})(window,document.documentElement,'async-hide','dataLayer',4000,
+{'GTM-T8LFJG2':true});</script>
+<script src="/assets/application-9b4b3cce7511ac0464e0cdaed7693929a023903085a213e7cdb5975f6a9a0695.js"></script>
+<script src="/assets/modernizr-43ece90ce3662a6bd3b00d7acdddd63c4a965f96d0b7e2b9738988f559971b3f.js"></script>
+<!-- start Mixpanel --><script type="text/javascript">(function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
+0)))}}var d=a;"undefined"!==typeof f?d=a[f]=[]:f="mixpanel";d.people=d.people||[];d.toString=function(b){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);b||(a+=" (stub)");return a};d.people.toString=function(){return d.toString(1)+".people (stub)"};k="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";c=e.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}})(document,window.mixpanel||[]);
+mixpanel.init("5080e5eebdaa906ad44bebec9a917acb");</script><!-- end Mixpanel -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-81714915-1', 'auto');
+  ga('require', 'GTM-T8LFJG2');
+  
+  ga('send', 'pageview');
+</script>
+</meta></meta></head>
+<body>
+<a href="/tuition#financing-options" id="banner-alert" target="_blank">
+<div class="container" data-event-label="banner" data-event-name="click_cta" data-label="location">
+<p class="close" type="button">×</p>
+<span class="banner-text">We're now offering a new hybrid tuition model -  <u>learn more here!</u> </span>
+</div>
+</a>
+<nav class="navbar navbar-default navbar-custom " data-event-label="navbar" data-event-name="click_cta" data-label="location" id="mainNav">
+<div class="container-fluid">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header">
+<button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button">
+<span class="sr-only">Toggle navigation</span><i class="fa fa-2x fa-bars"></i>
+</button>
+<div class="navbar-button">
+<a class="navbar-brand" data-event-label="homepage" data-event-name="click_cta" data-label="page" href="/">
+<img alt="rithm school company logo" height="45" src="/assets/logos/rithm_logo-52c2ff4eb53876f905ff2d8b1d46b5ec737caa4d9f9acf4790dcd856f3ccc638.svg" title="Rithm School Logo"/>
+</a> </div>
+</div>
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<ul class="nav navbar-nav">
+<li class="dropdown">
+<a href="javascript:void(0)">
+                  Learn Full Time <span class="caret"></span>
+</a> <ul class="dropdown-menu dropdown-menu-left">
+<li data-event-label="program" data-event-name="click_cta" data-label="page"><a href="/program" id="#details">Program Details</a>
+<li data-event-label="admissions" data-event-name="click_cta" data-label="page"><a href="/admissions" id="#admissions">Admissions and Course Dates</a></li>
+<li data-event-label="program" data-event-name="click_cta" data-label="page"><a href="/tuition" id="#tuition">Tuition</a>
+<li data-event-label="curriculum" data-event-name="click_cta" data-label="page"><a href="/curriculum" id="#curriculum">Curriculum</a></li>
+<li data-event-label="company-projects" data-event-name="click_cta" data-label="page"><a href="/company-projects" id="#company_projects">Company Projects</a></li>
+<li data-event-label="outcomes" data-event-name="click_cta" data-label="page"><a href="/outcomes" id="#outcomes">Job Support</a></li>
+<li data-event-label="faq" data-event-name="click_cta" data-label="page"><a href="/faq" id="#faq">FAQ</a></li>
+</li></li></ul>
+</li>
+<li data-event-name="coding-workshops">
+<a href="/events" id="#workshops" target="_blank">Free Workshops</a>
+</li>
+<li data-event-name="free-online-courses">
+<a href="/courses" id="#online-courses">Free Online Courses</a>
+</li>
+<li data-event-label="partnerships" data-event-name="click_cta" data-label="page">
+<a href="/partnerships" id="#partnerships">Partnerships</a>
+</li>
+<li>
+<a href="/team" id="#team">Our Team</a>
+</li>
+<li>
+<a href="/blog" id="#blog">Blog</a>
+</li>
+<li>
+<a class="apply-now btn" data-event-name="apply_button_clicked" href="/apply" id="apply">Apply Now</a>
+</li>
+</ul>
+</div>
+<!-- /.navbar-collapse -->
+</div>
+</nav>
+<div class="container">
+<header>
+<div class="begin-text">
+<div class="row">
+<h1 class="col-sm-12 heading">{ The Rithm Blog. }</h1>
+</div>
+</div>
+</header>
+<form accept-charset="UTF-8" action="/blog" class="form-inline" method="get"><input name="utf8" type="hidden" value="✓"/>
+<div class="row">
+<div class="form-group col-sm-6 col-sm-offset-3">
+<div class="input-group blog-search">
+<input autofocus="autofocus" class="form-control" id="term" name="term" placeholder="Search by author, title or content" type="text"/>
+<span class="input-group-btn">
+<input class="btn btn-primary" name="commit" type="submit" value="Search"/>
+</span>
+</div>
+</div>
+</div>
+</form> <article>
+<h4 class="section-heading">
+<a href="/blog/student-interview-lena-ryoo">Student Interview: Lena Ryoo on Company Projects</a>
+</h4>
+<div class="card">
+<time datetime="2019-05-15" pubdate=""></time>
+<p>At Rithm, we believe that one of the best ways to prepare students for jobs as web developers is by giving them opportunities to work on real-world projects. Working on personal projects can be fun, but working in a team or on an existing code base gives students insights into the day-to-day challenges of a developer that they might not otherwise learn. Our 10th cohort recently completed their company projects, so we spoke with Lena to get their perspective on the experience.</p>
+<p><a href="/blog/student-interview-lena-ryoo">Continue Reading</a></p>
+<h4 class="service-heading"><small>May 15, 2019</small></h4>
+</div>
+</article>
+<article>
+<h4 class="section-heading">
+<a href="/blog/debugging-like-a-scientist">Debugging Like a Scientist</a>
+</h4>
+<div class="card">
+<time datetime="2019-04-29" pubdate=""></time>
+<p>When you're first learning how to code, error messages can be intimidating. Because of this, beginners sometimes ignore error messages entirely. Instead, they will favor more of a "guess-and-check" approach to fixing bugs. While we don't encourage this approach at Rithm, we recognize that in the context of solving small, isolated problems, it can be successful. But when it comes to working on larger applications, professional engineers need a more sophisticated set of tools to fix problems.</p>
+<p>Fortunately, one of the most successful strategies for fixing errors is also one of the oldest: applying the <b>scientific method</b>. In this post, I'd like to review the scientific method, and highlight how you can use it to solve programming problems more quickly.</p>
+<p><a href="/blog/debugging-like-a-scientist">Continue Reading</a></p>
+<h4 class="service-heading"><small>April 29, 2019</small></h4>
+</div>
+</article>
+<article>
+<h4 class="section-heading">
+<a href="/blog/benefits-of-code-reviews">The Benefits of Code Reviews</a>
+</h4>
+<div class="card">
+<time datetime="2019-03-29" pubdate=""></time>
+<p>Code reviews can be a common practice for many developers: another engineer, often more experienced with the language, library, or code base being used, meets with the author-developer to read through their work, ask questions, and provide suggestions for improvement.</p>
+<p>This process can be a positive experiment for many, but often, it can be challenging to be on the receiving end of a review. These can descend into demands for  needless uniformity of style ("no! it's super-important to align your code <em>just so</em>") or they can create uncomfortable or harmful power dynamics between peers about whose style or ideas are "better." At their very worst, code reviews can merely provide cover for biased viewpoints or microaggressions directed toward developers who may have less power in organizations.</p>
+<p>While we recognize that not all parts of this practice are always helpful, we do encourage a lot of code reviews for our students here at Rithm. We think that, especially for newer developers in a class, these can provide useful feedback and lessons that can be difficult to get from lectures or books, and can also be hard to notice just from reading other code.</p>
+<p><a href="/blog/benefits-of-code-reviews">Continue Reading</a></p>
+<h4 class="service-heading"><small>March 29, 2019</small></h4>
+</div>
+</article>
+<article>
+<h4 class="section-heading">
+<a href="/blog/three-more-js-mistakes-that-beginners-make">Three More JavaScript Mistakes That Beginners Make</a>
+</h4>
+<div class="card">
+<time datetime="2019-03-07" pubdate=""></time>
+<p>Despite its best intentions, JavaScript is not the most beginner friendly language. After working with thousands of beginners, here are a few common mistakes we see with applicants and students.</p>
+<p>A little while back, we wrote a post on <a href="/blog/three-more-js-mistakes-that-beginners-make" rel="noopener noreferrer" target="_blank">the top four javascript mistakes beginners make</a>. In this post, we'll be adding a few more we've seen to help you better prepare when learning the basics!</p>
+<h3><strong>1. Dot vs Bracket notation</strong></h3>
+<p>Let’s imagine we have the following object,</p>
+<div class="CodeRay">
+<div class="code"><pre><span class="keyword">var</span> instructorData = {
+  <span class="key">firstName</span>: <span class="string"><span class="delimiter">"</span><span class="content">Elie</span><span class="delimiter">"</span></span>,
+  <span class="key">employer</span>: <span class="string"><span class="delimiter">"</span><span class="content">Rithm School</span><span class="delimiter">"</span></span>,
+  <span class="key">favoriteNumber</span>: <span class="integer">42</span>,
+  <span class="key">isHilarious</span>: <span class="predefined-constant">false</span>
+};
+</pre></div>
+</div>
+<p>When accessing a key in an object, there are two possible ways to go about it.</p>
+<ul>
+<li><p>dot notation</p></li>
+<li><p>bracket notation</p></li>
+</ul>
+<p>Knowing when to use which one is essential, so here is a good rule of thumb to follow.If you know with 100% certainty what the key is - always use dot. If you are not 100% sure what the key will be, you <strong>must</strong> use bracket.</p>
+<p><a href="/blog/three-more-js-mistakes-that-beginners-make">Continue Reading</a></p>
+<h4 class="service-heading"><small>March 07, 2019</small></h4>
+</div>
+</article>
+<article>
+<h4 class="section-heading">
+<a href="/blog/alumni-spotlight-miranda">Alumni Spotlight: Miranda Howitt</a>
+</h4>
+<div class="card">
+<time datetime="2019-02-12" pubdate=""></time>
+<p>Before joining us for Rithm’s 6th cohort, Miranda worked as an executive assistant and office manager in the tech industry, after getting her BA in Psychology from NYU. A San Francisco native, she also is a volleyball player and a self-identified graphic novel enthusiast. Miranda took some time to discuss her job search, her experience at Rithm, and her steadfast friendship with Whiskey the dog.</p>
+<p><a href="/blog/alumni-spotlight-miranda">Continue Reading</a></p>
+<h4 class="service-heading"><small>February 12, 2019</small></h4>
+</div>
+</article>
+<article>
+<h4 class="section-heading">
+<a href="/blog/alumni-spotlight-kristen">Alumni Spotlight: Kristen Lingwood</a>
+</h4>
+<div class="card">
+<time datetime="2019-02-06" pubdate=""></time>
+<p>Before Kristen discovered programming, she was an elementary school teacher, and then a stay at home parent. When she’s AFK, she loves reading (If something has to do with magic or outer space, she’s probably read it or wants to read it), puzzles, games and travel. Her idea of a great party involves tabletop games, wine, and puns so cringe worthy that even your dad would groan. Kristen was able to take some time from her busy schedule to share more about her experience as a student, offer her advice for new students, and explain how the skills she learned at Rithm School will be used in her new position as a Software Engineer at Maven Technologies.</p>
+<p><a href="/blog/alumni-spotlight-kristen">Continue Reading</a></p>
+<h4 class="service-heading"><small>February 06, 2019</small></h4>
+</div>
+</article>
+<article>
+<h4 class="section-heading">
+<a href="/blog/alumni-spotlight-tyler">Alumni Spotlight: Tyler Ketron</a>
+</h4>
+<div class="card">
+<time datetime="2019-01-30" pubdate=""></time>
+<p>Before joining us for Rithm’s 7th cohort, Tyler Ketron got his hands dirty (and sometimes still misses it!) as a hydrogeologist at government agencies and a consulting firm. When he’s not busy at his new job as a Front End Engineer, you can find Tyler competitively weight lifting, raising chickens in his backyard, or flexing his classical musician skills with the oboe and piano. Luckily, we were able to catch some time to sit down with Tyler and discuss his journey from growing up in a small town in Tennessee to becoming a software engineer.</p>
+<p><a href="/blog/alumni-spotlight-tyler">Continue Reading</a></p>
+<h4 class="service-heading"><small>January 30, 2019</small></h4>
+</div>
+</article>
+<article>
+<h4 class="section-heading">
+<a href="/blog/avoiding-burnout">Avoiding Burnout</a>
+</h4>
+<div class="card">
+<time datetime="2019-01-09" pubdate=""></time>
+<p>In May of 2018, Blind (an anonymous community work app) released a survey that revealed that <a href="https://blog.teamblind.com/index.php/2018/05/29/close-to-60-percent-of-surveyed-tech-workers-are-burnt-out-credit-karma-tops-the-list-for-most-employees-suffering-fro" rel="noopener noreferrer" target="_blank">close to 60 percent of employees surveyed considered themselves burned out</a>. With over 11,000 respondents from the biggest tech companies in the game, it verified what those in the trenches were already well-aware of: burnout in tech is ubiquitous.</p>
+<p><a href="/blog/avoiding-burnout">Continue Reading</a></p>
+<h4 class="service-heading"><small>January 09, 2019</small></h4>
+</div>
+</article>
+<article>
+<h4 class="section-heading">
+<a href="/blog/student-interview-sarah-zac">Student Interview: Sarah + Zac on Company Projects</a>
+</h4>
+<div class="card">
+<time datetime="2018-12-18" pubdate=""></time>
+<p>At Rithm, we believe that one of the best ways to prepare students for jobs as web developers is by giving them opportunities to work on real-world projects. Working on personal projects can be fun, but working in a team or on an existing code base gives students insights into the day-to-day challenges of a developer that they might not otherwise learn. Our 8th cohort is nearing the end of working on these projects, so we spoke with our students Sarah Kaplan and Zac Bennet to get their perspective on the experience.</p>
+<p><a href="/blog/student-interview-sarah-zac">Continue Reading</a></p>
+<h4 class="service-heading"><small>December 18, 2018</small></h4>
+</div>
+</article>
+<article>
+<h4 class="section-heading">
+<a href="/blog/new-tuition-option">A New Tuition Option: We Make Money Only When You Do</a>
+</h4>
+<div class="card">
+<time datetime="2018-12-11" pubdate=""></time>
+<p>When we first started Rithm in 2016, we made a bet. We believed that there would be people willing to pay a bit more for an immersive coding program that placed the quality of the education and student experience first. </p>
+<p>Two years later, we’ve proven that you can build a successful program that focuses on small class sizes and experienced instructors. Our graduates have gone on to work at top-tier companies like Pinterest and Palantir. 74% of our graduates find work within 90 days, and with a median salary of $110,000 (details <a href="https://www.rithmschool.com/blog/bppe-approval-and-outcomes-numbers" rel="noopener noreferrer" target="_blank">here</a>).</p>
+<p>But there are still challenges. To date, our biggest difficulty has been making the program as affordable as possible without sacrificing quality. Our pricing has always been $24,000, which unfortunately has made our program inaccessible to many potential students. <strong>That’s why we’re excited to announce that starting with our first class next year, we’ll be adding a deferred tuition option.</strong> This means that you won’t have to pay any tuition until you find a job as an engineer.</p>
+<p><a href="/blog/new-tuition-option">Continue Reading</a></p>
+<h4 class="service-heading"><small>December 11, 2018</small></h4>
+</div>
+</article>
+<p class="text-center">
+<nav class="pagination">
+<span class="page current">
+  1
+</span>
+<span class="page">
+<a href="/blog?page=2" rel="next">2</a>
+</span>
+<span class="page">
+<a href="/blog?page=3">3</a>
+</span>
+<span class="page">
+<a href="/blog?page=4">4</a>
+</span>
+<span class="page">
+<a href="/blog?page=5">5</a>
+</span>
+<span class="page gap">…</span>
+<span class="next">
+<a href="/blog?page=2" rel="next">Next ›</a>
+</span>
+<span class="last">
+<a href="/blog?page=9">Last »</a>
+</span>
+</nav>
+</p>
+<p class="text-center">
+<a class="apply-now" href="/apply">Apply Now</a>
+</p>
+</div>
+<!-- Chatra {literal} -->
+<script>
+    var countries = ["Australia", "Canada", "United States", "United Kingdom", "Ireland", "New Zealand", "Israel", "Sweden", "Denmark", "Netherlands", "Hong Kong", "Finland", "Austria", "Norway", "Germany","Singapore"]
+    ChatraID = 'B32ypJxDbLRq5RhQ2';
+    ChatraGroupID = 'eXDapncP5vKAcBDr5';
+    var key = "3c90912af13c55003cd9990c1db175ad"
+    // if they are not in the array we cache that in localStorage and noop
+    if(localStorage.getItem("nvc") === "true"){
+    }
+    // if they are in the array just load the Chatra box
+    else if(localStorage.getItem("vc") === "true"){
+      (function(d, w, c) {
+                var n = d.getElementsByTagName('script')[0],
+                    s = d.createElement('script');
+                w[c] = w[c] || function() {
+                    (w[c].q = w[c].q || []).push(arguments);
+                };
+                s.async = true;
+                s.src = (d.location.protocol === 'https:' ? 'https:': 'http:')
+                    + '//call.chatra.io/chatra.js';
+                n.parentNode.insertBefore(s, n);
+            })(document, window, 'Chatra');
+    // otherwise get their location and set them as vc or nvc if they are in the array or not
+    } else {
+       $.getJSON("https://api.ipstack.com/check?access_key=" + key).then(function(data){
+        if(countries.includes(data.country_name)){
+            localStorage.setItem("vc", true)
+            (function(d, w, c) {
+                var n = d.getElementsByTagName('script')[0],
+                    s = d.createElement('script');
+                w[c] = w[c] || function() {
+                    (w[c].q = w[c].q || []).push(arguments);
+                };
+                s.async = true;
+                s.src = (d.location.protocol === 'https:' ? 'https:': 'http:')
+                    + '//call.chatra.io/chatra.js';
+                n.parentNode.insertBefore(s, n);
+            })(document, window, 'Chatra');
+        } else {
+          localStorage.setItem("nvc") === "true"
+        }
+    })
+}
+   
+</script>
+<!-- /Chatra {/literal} -->
+<script>
+window.ChatraSetup = {
+    colors: {
+        buttonText: '#ffffff', // chat button text color
+        buttonBg: '#F86161'    // chat button background color
+    }
+};
+
+// // REMOVED when parallax was added
+// We only want to delay the chat on the homepage
+// so the animation has time to load.
+// if (window.location.pathname === '/') {
+//   Chatra("hide");
+//   setTimeout(function() {
+//     Chatra("show");
+//   }, 2600);
+// }
+</script>
+<footer data-event-label="page_bottom" data-event-name="click_cta" data-label="location">
+<div class="container">
+<div class="row">
+<div class="col-md-3 col-sm-4 text-center">
+<a class="footer-logo" href="/" style="padding:0;">
+<img alt="rithm school company logo" class="logo" height="58" src="/assets/logos/rithm_logo-52c2ff4eb53876f905ff2d8b1d46b5ec737caa4d9f9acf4790dcd856f3ccc638.svg" title="Rithm School Logo" width="120"/>
+</a> <span><a class="text-muted faq-url" href="/cdn-cgi/l/email-protection#1871767e77586a716c70756b7b70777774367b7775"><span class="__cf_email__" data-cfemail="a3cacdc5cce3d1cad7cbced0c0cbcccccf8dc0ccce">[email protected]</span></a></span>
+</div>
+<div class="col-md-6 col-sm-8">
+<div class="text-center email_signup_heading">
+<p class="lead" data-event-name="click_email_link">Interested in meetups, courses and free content?</p>
+<button class="btn" data-event-name="join_mailing_list" id="mailing-list" name="button" type="submit">Join mailing list</button>
+</div>
+<p class="lead text-center thank_you"></p>
+</div>
+<div class="col-md-3 col-sm-4 text-center">
+<ul class="list-inline social-buttons">
+<li data-event-label="twitter" data-event-name="click_cta" data-label="click_social_link"><a href="https://www.twitter.com/rithmschool" target="_blank"><i class="fa fa-twitter"></i></a>
+</li>
+<li data-event-label="facebook" data-event-name="click_cta" data-label="click_social_link"><a href="https://www.facebook.com/rithmschool" target="_blank"><i class="fa fa-facebook"></i></a>
+</li>
+<li data-event-label="linkedin" data-event-name="click_cta" data-label="click_social_link"><a href="https://www.linkedin.com/company/rithm-school" target="_blank"><i class="fa fa-linkedin"></i></a>
+</li>
+</ul>
+</div>
+</div>
+<hr/>
+<div class="row">
+<div class="col-sm-12 text-center">
+<a class="text-muted" href="/privacy">Privacy Policy</a> |
+          <a class="text-muted" href="/terms">Terms of Service</a>
+<span class="copyright">© Rithm Inc. 500 Sansome Street Suite 300 San Francisco, CA 94111. All rights reserved. </span>
+</div>
+</div>
+</div>
+</footer>
+<!-- link that opens popup -->
+<a class="popup-with-form" href="#unlock-form" style="display:none;">Open form</a>
+<!-- form itself -->
+<div class="thank_you"></div>
+<div class="container">
+<form class="card mfp-hide white-popup-block" id="unlock-form">
+<input id="authenticity_token" name="authenticity_token" type="hidden" value="JL98Hf/iYnEIKgfJHf56RDQkW1S0XVymmc9uhBKl5TI3X8ChDSKlVkiu7g1MBy6eCwODe+QXQHIpOISDAQ0/hw=="/> <div id="modal-email-known" style="display:none;">
+<h1 class="text-center">Signed up already? Please enter your email to confirm.</h1>
+<div class="email-errors text-center"></div>
+<hr class="modal--bar"/>
+<div class="row">
+<div class="col-md-offset-2 col-md-8">
+<div class="form-group">
+<input class="form-control" id="confirm-email-input" placeholder="Email" type="email"/>
+<p class="help-block text-danger"></p>
+</div>
+</div>
+</div>
+<button class="btn btn-xl" id="confirm-email" type="submit">Sign In</button>
+<div class="text-center">
+<a class="modal-go-back" href="javascript:void(0)" style="margin-top:-20px; display:block;">Go Back</a>
+</div>
+</div>
+<div class="row" id="modal-first-part">
+<h1 class="text-center">Get 200+ hours of free content, tutorials, and screencasts</h1>
+<div class="col-sm-offset-2 col-sm-8">
+<hr class="modal--bar"/>
+<h5 class="text-center">Share your email, and we'll give you a confirmation code to unlock all of our materials. No spam, we promise.</h5>
+<div class="errors text-center"></div>
+<div class="row">
+<div class="col-lg-6">
+<div class="form-group">
+<input autofocus="autofocus" class="form-control" id="first" name="first" placeholder="First Name" required="required" type="text"/>
+<p class="help-block text-danger"></p>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="form-group">
+<input class="form-control" id="last" name="last" placeholder="Last Name" required="required" type="last"/>
+<p class="help-block text-danger"></p>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-12">
+<div class="form-group">
+<input class="form-control" id="email" name="email" placeholder="Email Address" required="required" type="email"/>
+<p class="help-block text-danger"></p>
+</div>
+</div>
+</div>
+<button class="next-button btn btn-xl" type="submit">Next</button>
+<a class="text-center email-known" href="javascript:void(0)">Already signed up?</a>
+</div>
+</div>
+<div id="modal-second-part" style="display:none;">
+<h1 class="text-center">Tell us more about yourself</h1>
+<div class="col-sm-offset-2 col-sm-8">
+<hr class="modal--bar"/>
+<h5 class="text-center">Please answer these two questions to help us build the perfect Rithm experience for you.</h5>
+<div class="errors text-center"></div>
+<div class="row">
+<div class="col-lg-12">
+<div class="form-group">
+            How would you define your skill as a developer?
+            <label for="Beginner"><input checked="" class="radio" id="Beginner" name="skill" required="" type="radio" value="Beginner"> Beginner</input></label>
+<label for="Intermediate"><input class="radio" id="Intermediate" name="skill" type="radio" value="Intermediate">Intermediate </input></label>
+<label for="Advanced"><input class="radio" id="Advanced" name="skill" type="radio" value="Advanced"/>Advanced </label>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-12">
+<div class="form-group">
+            Would you like to learn more about Rithm School's in-person courses and how to apply?
+            <label for="yes"><input checked="" class="radio" id="yes" name="learn" required="" type="radio" value="Yes"> Yes</input></label>
+<label for="no"><input class="radio" id="no" name="learn" type="radio" value="No"/> No</label>
+<p class="help-block text-danger"></p>
+</div>
+</div>
+</div>
+<button class="btn btn-xl" type="submit">Get Content</button>
+</div>
+</div>
+<div id="modal-third-part" style="display:none;">
+<h1 class="text-center"></h1>
+<div class="col-sm-offset-2 col-sm-8">
+<hr class="modal--bar"/>
+<h5 class="text-center"></h5>
+</div>
+</div>
+</form>
+</div>
+<!-- Google Code for Purchase Conversion Page -->
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>
+
+
+Process finished with exit code 0
