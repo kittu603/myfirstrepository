@@ -2,6 +2,7 @@ from random import choice
 from bs4 import BeautifulSoup
 import csv
 import requests
+#This is a comment
 
 link = "http://quotes.toscrape.com"
 response = requests.get(link)
